@@ -1,3 +1,4 @@
+# Aufgabe 4: Schere Stein Papier
 import random
 
 
@@ -6,7 +7,7 @@ def schere_stein_papier():
     nb_user_gewin = 0
     nb_comp_gewin = 0
     runde = 0
-    choice = "False"
+
     while Spiel_nochmal == "ja":
         choice = input(
             "Was wählen Sie? \n 1- Schere \n 2- Stein \n 3- Papier \n "
