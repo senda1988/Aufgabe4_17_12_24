@@ -15,7 +15,7 @@ def tage_bis_jahresende():
     heute = datetime.date.today()
     x = datetime.date(2024, 12, 31)
     anzahl_tage_bis_ende_jahr = x - heute
-    return anzahl_tage_bis_ende_jahr
+    return anzahl_tage_bis_ende_jahr.days
 
 
 def tage_bis_datum():
@@ -31,7 +31,7 @@ def tage_bis_datum():
                 print(f"{difference_tage}")
 
             else:
-                print(difference_tage)
+                # print(difference_tage)
                 print("Datum ist nicht gültig")
         except ValueError:
             print("Ungültiges Datum! Bitte das Datum im Format TT.MM.JJJJ eingeben.")
@@ -81,7 +81,7 @@ def choice_funktion():
             f"die Anzahl der Tage vom aktuellen Datum bis zum 31. Dezember ist : {tage_bis_jahresende()}"
         )
     elif choice == 3:
-        print()
+        tage_bis_datum()
     elif choice == 4:
         print(f"Wochentag : {wochentag_berechnen()}")
     elif choice == 5:
