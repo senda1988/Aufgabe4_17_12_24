@@ -31,6 +31,20 @@
 # print(f" Der Wochentag ist {wochentag_berechnen()}")
 
 
-zahlen = [1, 2, 3, 4, 5]
-print("Die erste Zahl ist:", zahlen[0])
-print("Die letzte Zahl ist:", zahlen[-1])
+# zahlen = [1, 2, 3, 4, 5]
+# print("Die erste Zahl ist:", zahlen[0])
+# print("Die letzte Zahl ist:", zahlen[-1])
+
+
+wochentag_liste = [
+    "Montag",
+    "Dienstag",
+    "Mittwoch",
+    "Donnerstag",
+    "Freitag",
+    "Samstag",
+    "Sonntag",
+]
+nb = len(wochentag_liste)
+for i in range(nb):
+    print(f"Der Tag nummer {i} ist: {wochentag_liste[i]}")
